@@ -21,9 +21,9 @@
 
 
 module alu(
-    input [31:0] srca,
-    input [31:0] srcb,
-    input [2:0] aluop,
+    input logic [31:0] srca,
+    input logic [31:0] srcb,
+    input logic [2:0] aluop,
     output logic [31:0] alures,
     output logic zero
     );

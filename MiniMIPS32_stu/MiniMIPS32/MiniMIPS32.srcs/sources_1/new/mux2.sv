@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2021/06/10 10:19:25
+// Create Date: 2021/06/10 11:08:51
 // Design Name: 
-// Module Name: adder
+// Module Name: mux2
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,11 +20,15 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module adder(
-    input logic [31:0] a,
-    input logic [31:0] b,
-    output logic [31:0] res
+module mux2
+    #(parameter Width=32;)
+    (
+    input logic [Width-1:0] srca,
+    input logic [Width-1:0] srcb,
+    input logic select,
+    output logic [Width-1:0] out
     );
 
-    assign res=a+b;
+    assign out=select ? srcb : srca;
+
 endmodule

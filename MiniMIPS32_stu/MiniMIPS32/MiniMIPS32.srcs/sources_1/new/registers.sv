@@ -21,13 +21,13 @@
 
 
 module registers(
-    input sys_clk,
-    input sys_rst,
-    input [4:0] a1,
-    input [4:0] a2,
-    input [4:0] a3,
-    input [31:0] wd,
-    input we,
+    input logic sys_clk,
+    input logic sys_rst,
+    input logic [4:0] a1,
+    input logic [4:0] a2,
+    input logic [4:0] a3,
+    input logic [31:0] wd,
+    input logic we,
     output logic [31:0] rd1,
     output logic [31:0] rd2
     );
