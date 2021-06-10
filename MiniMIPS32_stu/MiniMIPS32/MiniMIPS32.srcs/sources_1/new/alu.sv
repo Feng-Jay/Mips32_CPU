@@ -29,11 +29,11 @@ module alu(
     );
 
     always_comb begin
-        case(aluop) begin
+        case(aluop)
             3'b010: alures=signed'(srca)+signed'(srcb);
 
             default: alures=32'b0000_0000_0000_0000_0000_0000_0000_0000;
-        end
+        endcase
     end
 
     assign zero=!alures;

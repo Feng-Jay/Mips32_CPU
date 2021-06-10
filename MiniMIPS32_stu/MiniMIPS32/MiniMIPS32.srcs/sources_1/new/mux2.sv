@@ -21,7 +21,7 @@
 
 
 module mux2
-    #(parameter Width=32;)
+    #(parameter Width=32)
     (
     input logic [Width-1:0] srca,
     input logic [Width-1:0] srcb,

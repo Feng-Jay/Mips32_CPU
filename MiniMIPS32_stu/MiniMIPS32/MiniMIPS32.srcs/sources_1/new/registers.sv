@@ -36,7 +36,7 @@ module registers(
     integer i=0;
     always_ff@(posedge sys_clk) begin
         if(!sys_rst) begin
-            for(i=0,i<32,i++) begin
+            for(i=0;i<32;i++) begin
                 regs[i]<=32'b0000_0000_0000_0000_0000_0000_0000_0000;
             end
         end
@@ -51,7 +51,7 @@ module registers(
         
         if(a2!=0)
         rd2=regs[a2];
-        else if(a2==0) rd2=32'b0000_0000_0000_0000_0000_0000_0000_0000
+        else if(a2==0) rd2=32'b0000_0000_0000_0000_0000_0000_0000_0000; 
     end
 
 endmodule

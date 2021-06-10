@@ -25,6 +25,6 @@ module sign_extend(
     output logic [31:0] signimm
     );
 
-    assign signimm={16{imm[15]},imm};
+    assign signimm={{16{imm[15]}},imm};
 
 endmodule
