@@ -1,0 +1,10 @@
+Vivado Simulator 2017.3
+Time resolution is 1 ps
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING in MiniMIPS32_SYS_tb.SoC.data_ram.inst at time                20000 ns: 
+Reading from out-of-range address. Max address in MiniMIPS32_SYS_tb.SoC.data_ram.inst is         255
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING: This core is supplied with a behavioral model. To model cycle-accurate behavior you must run timing simulation.
+WARNING in MiniMIPS32_SYS_tb.SoC.data_ram.inst at time                20000 ns: 
+Reading from out-of-range address. Max address in MiniMIPS32_SYS_tb.SoC.data_ram.inst is         255
