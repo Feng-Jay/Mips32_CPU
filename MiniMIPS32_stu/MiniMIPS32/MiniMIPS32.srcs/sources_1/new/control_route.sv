@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2021/06/10 10:19:25
+// Create Date: 2021/06/12 09:53:13
 // Design Name: 
-// Module Name: adder
+// Module Name: control_route
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,13 +20,19 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module adder
-    #(parameter Width =32)
-    (
-    input logic [Width-1:0] a,
-    input logic [Width-1:0] b,
-    output logic [Width-1:0] res
-    );
+module control_route(
+    input logic [5:0] op,
+    input logic [5:0] func,
+
+    output logic memtoreg,
+    output logic memwrite,
+    output logic branch,
+    output logic [2:0] alucontrol,
+    output logic alusrc,
+    output logic regdest,
+    output logic regwrite
+);
+
     
-    assign res=a+b;
+
 endmodule

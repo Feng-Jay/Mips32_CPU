@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2021/06/10 10:19:25
+// Create Date: 2021/06/12 10:34:24
 // Design Name: 
-// Module Name: adder
+// Module Name: pc_reg
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,13 +20,17 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module adder
-    #(parameter Width =32)
-    (
-    input logic [Width-1:0] a,
-    input logic [Width-1:0] b,
-    output logic [Width-1:0] res
+module pc_reg(
+    input logic sys_clk,
+    input logic sys_rst,
+    input logic [31:0] in,
+
+    output logic [31:0] out
     );
-    
-    assign res=a+b;
+
+    always_ff @(posedge sys_clk) begin
+        if(!sys_rst) out<=32'b0000_0000_0000_0000_0000_0000_0000_0000;
+        else out<=in;
+    end
+
 endmodule

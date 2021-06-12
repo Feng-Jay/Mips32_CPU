@@ -3,9 +3,9 @@
 // Company: 
 // Engineer: 
 // 
-// Create Date: 2021/06/10 10:19:25
+// Create Date: 2021/06/12 09:52:46
 // Design Name: 
-// Module Name: adder
+// Module Name: control
 // Project Name: 
 // Target Devices: 
 // Tool Versions: 
@@ -20,13 +20,7 @@
 //////////////////////////////////////////////////////////////////////////////////
 
 
-module adder
-    #(parameter Width =32)
-    (
-    input logic [Width-1:0] a,
-    input logic [Width-1:0] b,
-    output logic [Width-1:0] res
+module control(
+
     );
-    
-    assign res=a+b;
 endmodule
